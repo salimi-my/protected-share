@@ -17,7 +17,7 @@ This is a simple file sharing web app created using Codeigniter. User can login 
 Open the [database.php](/application/config/database.php) and fill in your database configurations. Create new MySQL database then import [protected_share.sql](/protected_share.sql).
 
 ## Demo
-Host the project anywhere you want. [Click here](https://share-salimi.my) to visit.
+Host the project anywhere you want. [Click here](https://share.salimi.my) to visit.
 <br>
 Direct link: `https://share.salimi.my`
 
