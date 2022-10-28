@@ -1,65 +1,33 @@
-<p align="center">
-  <a href="https://getstisla.com">
-    <img src="https://avatars2.githubusercontent.com/u/45754626?s=75&v=4" alt="Stisla logo" width="75" height="75">
-  </a>
-</p>
+# [Protected Share](https://share.salimi.my) &middot; [![Author Salimi](https://img.shields.io/badge/Author-Salimi-%3C%3E)](https://www.linkedin.com/in/mohamad-salimi/)
+This is a simple file sharing web app created using Codeigniter. User can login to upload files for sharing and link of the file shared to other will be password protected. Anyone with the shared link will need to enter password to download the file.
 
-<h1 align="center">Stisla for CodeIgniter</h1>
+## Free file sharing app
+- This is a file sharing app
+- File shared will be password protected
+- Created in PHP using Codeigniter framework
+- Easy for installation
 
-<p align="center">
-  Stisla is Free Bootstrap Admin Template and will help you to speed up your project, design your own dashboard UI and the users will love it.
-</p>
 
-[![Stisla Preview](https://camo.githubusercontent.com/2135e0f6544a7286a3412cdc3df32d47fc91b045/68747470733a2f2f692e6962622e636f2f3674646d6358302f323031382d31312d31312d31352d33352d676574737469736c612d636f6d2e706e67)](https://getstisla.com)
+## Tech/framework used
+- Codeigniter
+- Bootstrap 4
+- MySQL
 
-## Table of contents
+## Starting the project
+Open the [database.php](/application/config/database.php) and fill in your database configurations. Create new MySQL database then import [protected_share.sql](/protected_share.sql).
 
-- [Link Stisla](#link-stisla)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#License)
+## Demo
+Host the project anywhere you want. [Click here](https://share-salimi.my) to visit.
+<br>
+Direct link: `https://share.salimi.my`
 
-## Link Stisla
-- Homepage: [getstisla.com](https://getstisla.com)
-- Repository: [github.com/stisla/stisla](https://github.com/stisla/stisla)
-- Documentation: [getstisla.com/docs](https://getstisla.com/docs)
 
-## Installation
-- [Download the latest release](https://github.com/KhidirDotID/stisla-codeigniter/archive/v1.0.0.zip).
-or clone the repo :
-```
-https://github.com/KhidirDotID/stisla-codeigniter.git
-```
+## Screenshots
+#### Login
+![Login](/screenshots/screenshot-1.png)
 
-## Usage
-- Create a new Controller at `application/controllers` then put like this:
-```
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+#### Dashboard
+![Dashboard](/screenshots/screenshot-2.png)
 
-class Controller_name extends CI_Controller {
-
-	public function index() {
-		$data = array(
-			'title' => "Your title"
-		);
-		$this->load->view('View_name', $data);
-	}
-}
-?>
-```
-- Create a new View at `application/views` then put like this:
-```
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-$this->load->view('dist/_partials/header'); ?>
-
-      <!-- Main Content -->
-
-<?php
-$this->load->view('dist/_partials/footer'); ?>
-```
-
-## License
-
-Stisla is under the [MIT License](LICENSE).
+#### Share Page
+![Share Page](/screenshots/screenshot-3.png)
