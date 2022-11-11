@@ -20,7 +20,7 @@ $this->load->view('admin/_partials/header');
                 <form id="login_form" action="<?php echo base_url().'admin/login'; ?>" method="post" class="needs-validation" novalidate="">
                   <div class="form-group">
                     <label for="email">Username or Email</label>
-                    <input id="username_email" type="username_email" class="form-control<?php if(!empty(form_error('username_email'))){echo ' is-invalid';} ?>" name="username_email" tabindex="1" required autofocus>
+                    <input id="username_email" type="username_email" placeholder="Enter username or email..." class="form-control<?php if(!empty(form_error('username_email'))){echo ' is-invalid';} ?>" name="username_email" tabindex="1" required autofocus>
                     <?php echo form_error('username_email', '<div class="invalid-feedback">', '</div>'); ?>
                   </div>
 
@@ -28,7 +28,7 @@ $this->load->view('admin/_partials/header');
                     <div class="d-block">
                       <label for="password" class="control-label">Password</label>
                     </div>
-                    <input id="password" type="password" class="form-control<?php if(!empty(form_error('password'))){echo ' is-invalid';} ?>" name="password" tabindex="2" required>
+                    <input id="password" type="password" placeholder="Enter password..." class="form-control<?php if(!empty(form_error('password'))){echo ' is-invalid';} ?>" name="password" tabindex="2" required>
                     <?php echo form_error('password', '<div class="invalid-feedback">', '</div>'); ?>
                   </div>
 
