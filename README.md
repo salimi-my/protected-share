@@ -1,5 +1,5 @@
 # [Protected Share](https://share.salimi.my) &middot; [![Author Salimi](https://img.shields.io/badge/Author-Salimi-%3C%3E)](https://www.linkedin.com/in/mohamad-salimi/)
-This is a simple file sharing web app created using Codeigniter. User can login to upload files for sharing and link of the file shared to other will be password protected. Anyone with the shared link will need to enter password to download the file.
+This is a simple file sharing web app created using Codeigniter. User can login to upload files for sharing and link of the file shared to other will be password protected. Anyone with the shared link will need to enter password to download the shared file.
 
 ## Free file sharing app
 - This is a file sharing app
