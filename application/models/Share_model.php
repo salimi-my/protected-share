@@ -21,9 +21,14 @@ class Share_model extends CI_Model
     if ($query->num_rows() > 0) {
       $file_info = $query->row();
 
-      $downloaded = $file_info->downloaded + 1;
+      $hash = sha1(date("Y-m-d H:i:s"));
 
-      $update = $this->db->where('id', $file_info->id)->update('file', array('downloaded' => $downloaded));
+      if (!($this->session->tempdata('download_hash') == $hash)) {
+        $this->session->set_tempdata('download_hash', $hash, 5);
+
+        $downloaded = $file_info->downloaded + 1;
+        $this->db->where('id', $file_info->id)->update('file', array('downloaded' => $downloaded));
+      }
 
       $file_info->link = './shared_file/' . $file_info->file;
 
