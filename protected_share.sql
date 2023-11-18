@@ -47,7 +47,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `hash`, `first_name`, `last_name`, `username`, `email`, `password`, `phone`, `picture`, `acc_type`, `created`, `modified`) VALUES
-(1, 'b47893b7f388f5ddf881110c2508f3c6', 'PS', 'Admin', 'admin', 'psadmin@test.com', 'cee8966a189205c736f9b910b78f8b04a2354ae8', '0123456789', '', 'webmaster', '2019-12-20 15:16:00', '2022-10-29 00:11:53');
+(1, 'b47893b7f388f5ddf881110c2508f3c6', 'PS', 'Admin', 'psadmin', 'psadmin@test.com', '1529966c86831f410b1a1b9cd6567750547ea22d', '0123456789', '', 'webmaster', '2019-12-20 15:16:00', '2022-10-29 00:11:53');
 
 -- --------------------------------------------------------
 
