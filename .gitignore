@@ -15,3 +15,7 @@ application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
 /vendor/
+
+#upload dir
+shared_file/
+uploads/
